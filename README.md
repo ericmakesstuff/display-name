@@ -20,7 +20,7 @@ $ composer require ericmakesstuff/display-name
 ## Usage
 
 ``` php
-$displayName = new DisplayName\DisplayName();
+$displayName = new EricMakesStuff\DisplayName\DisplayName();
 echo $displayName->fullName('John Smith'); // John Smith
 echo $displayName->firstName('John Smith'); // John
 echo $displayName->firstNameLastInitial('John Smith'); // John S
@@ -29,6 +29,25 @@ echo $displayName->initials('John Smith'); // JS
 echo $displayName->initialsWithPeriods('John Smith'); // J.S.
 echo $displayName->initialsWithSpaces('John Smith'); // J S
 echo $displayName->format('John Smith', 'initials'); // JS
+```
+
+## Laravel Facade
+
+Include the Service Provider in config/app.php
+
+```php
+'EricMakesStuff\DisplayName\DisplayNameServiceProvider',
+```
+
+Include the Facade in config/app.php
+```php
+'DisplayName' => 'EricMakesStuff\DisplayName\Facades\DisplayName',
+```
+
+Use the facade
+```php
+DisplayName::firstName('John Smith') // John
+DisplayName::format('John Smith', 'initials') // JS
 ```
 
 ## Change log
