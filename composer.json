@@ -1,6 +1,6 @@
 {
     "name": "ericmakesstuff/display-name",
-    "description": "A simple package to show user's real names in a variety of Web-safe ways, i.e. Eric B. or E B.",
+    "description": "A simple package to show user's real names in a variety of Web-safe ways, i.e. Eric B. or E B. Also includes a Laravel Facade.",
     "keywords": [
         "EricMakesStuff",
         "DisplayName",
