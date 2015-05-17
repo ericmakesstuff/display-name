@@ -21,7 +21,13 @@ $ composer require ericmakesstuff/display-name
 
 ``` php
 $displayName = new DisplayName\DisplayName();
+echo $displayName->fullName('John Smith'); // John Smith
+echo $displayName->firstName('John Smith'); // John
+echo $displayName->firstNameLastInitial('John Smith'); // John S
+echo $displayName->firstNameLastInitialWithPeriod('John Smith'); // John S.
 echo $displayName->initials('John Smith'); // JS
+echo $displayName->initialsWithPeriods('John Smith'); // J.S.
+echo $displayName->initialsWithSpaces('John Smith'); // J S
 echo $displayName->format('John Smith', 'initials'); // JS
 ```
 

@@ -74,17 +74,17 @@ class DisplayNameTest extends \PHPUnit_Framework_TestCase
     /**
      * @dataProvider names
      */
-    public function testShow($name, $variants)
+    public function testFormat($name, $variants)
     {
         // With no arguments, show the first name and last initial
-        $this->assertEquals($this->displayName->show($name), $variants['firstNameLastInitial']);
+        $this->assertEquals($this->displayName->format($name), $variants['firstNameLastInitial']);
 
-        $this->assertEquals($this->displayName->show($name, 'fullName'), $name);
+        $this->assertEquals($this->displayName->format($name, 'fullName'), $name);
 
-        // We should be able to call $displayName->show('John Smith', 'firstName') and get 'John'
+        // We should be able to call $displayName->format('John Smith', 'firstName') and get 'John'
         // The same goes for every function
         foreach ($variants as $method => $result) {
-            $this->assertEquals($this->displayName->show($name, $method), $result);
+            $this->assertEquals($this->displayName->format($name, $method), $result);
         }
     }
 

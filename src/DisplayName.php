@@ -12,7 +12,7 @@ class DisplayName
         // constructor body
     }
 
-    public function show($name, $method = 'firstNameLastInitial')
+    public function format($name, $method = 'firstNameLastInitial')
     {
         if (method_exists($this, $method)) {
             return $this->{$method}($name);
