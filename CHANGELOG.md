@@ -1,20 +1,8 @@
 # Changelog
 
-All Notable changes to `:package_name` will be documented in this file
+All Notable changes to `DisplayName` will be documented in this file
 
-## NEXT - YYYY-MM-DD
+## Initial Release - 2015-05-17
 
 ### Added
-- Nothing
-
-### Deprecated
-- Nothing
-
-### Fixed
-- Nothing
-
-### Removed
-- Nothing
-
-### Security
-- Nothing
+- Initial Commit

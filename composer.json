@@ -1,17 +1,18 @@
 {
-    "name": "league/:package_name",
-    "description": ":package_description",
+    "name": "EricMakesStuff/DisplayName",
+    "description": "A simple package to show user's real names in a variety of Web-safe ways, i.e. Eric B. or E B.",
     "keywords": [
-        "league",
-        ":package_name"
+        "EricMakesStuff",
+        "DisplayName",
+        "Initials"
     ],
-    "homepage": "https://github.com/thephpleague/:package_name",
+    "homepage": "https://github.com/EricMakesStuff/DisplayName",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": ":author_website",
+            "name": "Eric Blount",
+            "email": "eric at ericmakesstuff dot com",
+            "homepage": "http://ericmakesstuff.com/",
             "role": "Developer"
         }
     ],
@@ -24,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "League\\Skeleton\\": "src"
+            "EricMakesStuff\\DisplayName\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "League\\Skeleton\\Test\\": "tests"
+            "EricMakesStuff\\DisplayName\\Test\\": "tests"
         }
     },
     "scripts": {
