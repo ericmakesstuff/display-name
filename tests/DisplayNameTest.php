@@ -86,6 +86,8 @@ class DisplayNameTest extends \PHPUnit_Framework_TestCase
         foreach ($variants as $method => $result) {
             $this->assertEquals($this->displayName->format($name, $method), $result);
         }
+
+        $this->assertEquals($this->displayName->format($name, 'unknownFormat'), '');
     }
 
     public function names()
