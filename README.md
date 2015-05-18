@@ -5,7 +5,7 @@
 [![Build Status](https://img.shields.io/travis/ericmakesstuff/display-name/master.svg?style=flat-square)](https://travis-ci.org/ericmakesstuff/display-name)
 [![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/ericmakesstuff/display-name.svg?style=flat-square)](https://scrutinizer-ci.com/g/ericmakesstuff/display-name/code-structure)
 [![Quality Score](https://img.shields.io/scrutinizer/g/ericmakesstuff/display-name.svg?style=flat-square)](https://scrutinizer-ci.com/g/ericmakesstuff/display-name)
-[![Total Downloads](https://img.shields.io/packagist/dt/ericmakesstuff/DispayName.svg?style=flat-square)](https://packagist.org/packages/ericmakesstuff/display-name)
+[![Total Downloads](https://img.shields.io/packagist/dt/ericmakesstuff/display-name.svg?style=flat-square)](https://packagist.org/packages/ericmakesstuff/display-name)
 
 A simple package to show user's real names in a variety of Web-safe ways, i.e. Eric B. or E B. Also includes a Laravel Facade.
 
