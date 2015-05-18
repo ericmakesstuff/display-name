@@ -2,7 +2,16 @@
 
 All Notable changes to `DisplayName` will be documented in this file
 
-## Initial Release - 2015-05-17
+## 1.0.0 - 2015-05-17
 
 ### Added
 - Initial Commit
+- Functional DisplayName class
+  - fullName
+  - firstName
+  - firstNameLastInitial
+  - firstNameLastInitialWithPeriod
+  - initials
+  - initialsWithPeriods
+  - initialsWithSpaces
+  - format (takes any of the formats as the second argument)
