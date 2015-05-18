@@ -33,7 +33,7 @@ class DisplayName
         return array_shift($parsed_name);
     }
 
-    public function firstNameLastInitial($name)
+    public function firstNameLastInitial($name, $with_period = false)
     {
         $parsed_name = $this->parseName($name);
 
@@ -41,6 +41,9 @@ class DisplayName
 
         if (count($parsed_name)) {
             $name .= ' ' . strtoupper($parsed_name[(count($parsed_name) - 1)][0]);
+            if ($with_period) {
+                $name .= '.';
+            }
         }
 
         return $name;
@@ -48,15 +51,7 @@ class DisplayName
 
     public function firstNameLastInitialWithPeriod($name)
     {
-        $parsed_name = $this->parseName($name);
-
-        $name = array_shift($parsed_name);
-
-        if (count($parsed_name)) {
-            $name .= ' ' . strtoupper($parsed_name[(count($parsed_name) - 1)][0]) . '.';
-        }
-
-        return $name;
+        return $this->firstNameLastInitial($name, true);
     }
 
     public function initials($name)
